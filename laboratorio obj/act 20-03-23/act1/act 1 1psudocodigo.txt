@@ -1,0 +1,61 @@
+Datos de entrada:
+
+mensaje char[255]
+wifi int
+datos int
+
+
+
+Datos de salida:
+
+mensaje de éxito o error en el envío del mensaje
+
+
+
+Nombre y tipo de variables:
+
+mensaje char[255]
+wifi int
+datos int
+
+
+
+Operaciones:
+
+fgets(mensaje, 255, stdin): leer la cadena de caracteres ingresada por el usuario
+scanf("%d",&wifi): leer el valor entero ingresado por el usuario para la señal wifi
+scanf("%d",&datos): leer el valor entero ingresado por el usuario para los datos 4G
+
+
+
+Condiciones:
+
+if(datos && wifi == 2): si los datos son verdaderos y la señal wifi es igual a 2, imprimir el mensaje "el mensaje no se pudo enviar ya que no tiene ningún tipo de conexión a Internet"
+if(datos==1 && wifi==2): si los datos son iguales a 1 y la señal wifi es igual a 2, imprimir el mensaje "el mensaje se envió con éxito ya que tiene conexión mediante datos"
+if(datos==2 && wifi==1): si los datos son iguales a 2 y la señal wifi es igual a 1, imprimir el mensaje "el mensaje: [mensaje ingresado] se envió con éxito ya que tiene conexión mediante wifi"
+
+
+
+pseudocodigo
+
+Escribir("Ingrese el mensaje a enviar")
+Leer(mensaje)
+
+Escribir("¿Tiene señal Wifi?")
+Escribir("1 - Sí")
+Escribir("2 - No")
+Leer(wifi)
+
+Escribir("¿Tiene datos 4G?")
+Escribir("1 - Sí")
+Escribir("2 - No")
+Leer(datos)
+
+Si datos == 2 y wifi == 2 entonces
+    Escribir("El mensaje no se pudo enviar ya que no tiene ninguna conexión a internet")
+Sino si datos == 1 y wifi == 2 entonces
+    Escribir("El mensaje se envió con éxito ya que tiene conexión mediante datos")
+Sino si datos == 2 y wifi == 1 entonces
+    Escribir("El mensaje:\n\n", mensaje, "\nse envió con éxito ya que tiene conexión mediante wifi")
+Fin si
+

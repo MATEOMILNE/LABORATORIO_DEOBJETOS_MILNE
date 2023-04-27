@@ -1,0 +1,66 @@
+Datos de entrada:
+
+empleados:int
+nota1:int
+nota2:int
+
+
+
+Datos de salida:
+
+Ninguno. El programa imprime en pantalla si cada empleado es apto o no.
+
+
+
+Nombre y tipo de variables:
+
+empleados: int.
+cont:int.
+nota1: int
+nota2: int
+i: int
+
+
+
+Operaciones:
+
+Suma: cont = cont + 1 se utiliza para llevar la cuenta de la cantidad de empleados procesados.
+
+
+
+Condiciones:
+
+if (nota1>=7 && nota2>=8) verifica si la calificación del primer examen es mayor o igual a 7 y si la calificación del segundo examen es mayor o igual a 8.
+if (nota1<7 && nota2>=8) verifica si la calificación del primer examen es menor a 7 y si la calificación del segundo examen es mayor o igual a 8.
+if (nota1>=7 && nota2<8) verifica si la calificación del primer examen es mayor o igual a 7 y si la calificación del segundo examen es menor a 8.
+if (nota1<7 && nota2<8) verifica si la calificación del primer examen es menor a 7 y si la calificación del segundo examen es menor a 8.
+
+
+
+pseudocodigo:
+
+	inicia
+	
+Escribir("Ingrese el mensaje a enviar")
+Leer(mensaje)
+
+Escribir("¿Tiene señal Wifi?")
+Escribir("1 - Sí")
+Escribir("2 - No")
+Leer(wifi)
+
+Escribir("¿Tiene datos 4G?")
+Escribir("1 - Sí")
+Escribir("2 - No")
+Leer(datos)
+
+Si datos == 2 y wifi == 2 entonces
+    Escribir("El mensaje no se pudo enviar ya que no tiene ninguna conexión a internet")
+
+si datos == 1 y wifi == 2 entonces
+    Escribir("El mensaje se envió con éxito ya que tiene conexión mediante datos")
+
+si datos == 2 y wifi == 1 entonces
+    Escribir("El mensaje:\n\n", mensaje, "\nse envió con éxito ya que tiene conexión mediante wifi")
+		
+	fin.

@@ -1,0 +1,32 @@
+Datos de entrada:
+
+sueldo: int
+
+sueldofinal: int:
+
+Operaciones:
+
+Multiplicación: se utiliza para calcular el nuevo sueldo, multiplicando el valor de la variable "sueldo" por el valor correspondiente según la condición del if.
+
+Condiciones:
+
+if(sueldo<8000): condición que evalúa si el sueldo ingresado es menor a 8000. Si se cumple, se realiza una operación de multiplicación para calcular el nuevo sueldo, y se muestra por pantalla el resultado con un mensaje correspondiente.
+if(sueldo>=8000): condición que evalúa si el sueldo ingresado es mayor o igual a 8000. Si se cumple, se realiza una operación de multiplicación para calcular el nuevo sueldo, y se muestra por pantalla el resultado con un mensaje correspondiente.
+
+
+
+
+Inicio
+Escribir("Ingrese el sueldo del trabajador")
+Leer(sueldo)
+
+Si (sueldo < 8000) Entonces
+sueldofinal = sueldo * 1.15
+Escribir("El nuevo sueldo sera de ", sueldofinal, " ya que su sueldo se encuentra debajo de los 8000$")
+
+SiNo Si (sueldo >= 8000) Entonces
+sueldofinal = sueldo * 1.12
+Escribir("El nuevo sueldo sera de ", sueldofinal, " ya que su sueldo se encuentra por encima de los 8000$")
+
+
+Fin
